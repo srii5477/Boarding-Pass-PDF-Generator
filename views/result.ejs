@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Input</title>
+</head>
+<body>
+    <h1> Your Boarding Pass </h1>
+    <form action="/generatePDF" method="POST">
+    <ul>
+        <li>Name as in Passport: 
+            <%= details.name %>
+        </li>
+        <li>Country of Origin:
+            <%= details.country %>
+        </li>
+        <li>Destination Airport:
+            <%= details.destination %>
+        </li>
+        <li>Date of Departure:
+            <%= details.date %>
+        </li>
+        <li>Boarding Time:
+            <%= details.time %>
+        </li>
+        <li>Flight ID:
+            <%= details.flightID %>
+        </li>
+        <li>Gate No:
+            <%= details.gate %>
+        </li>
+        <li>Seat No:
+            <%= details.seat %>
+        </li>
+    </ul>
+    <button type="submit"> See PDF </button>
+    </form>
+</body>
+</html>

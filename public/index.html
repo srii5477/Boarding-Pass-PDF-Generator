@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Boarding Pass Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h1> Create your custom boarding pass! </h1>
+        <div class="mainpass">
+            <div class="header">BOARDING PASS --------------------- AIRLINE XYZ</div>
+            <form action="/download" method="POST">
+                <div class="info">
+                    <div class="one"> <label id="nametext">Name of Pass Holder: </label><input type="text" name="name" value="Name"></div>
+                    <div class="two"><label id="countrytext">Country of Origin:</label><input type="text" name="country" value="Country"></div>
+                    <div class="three"><label id="destext">Destination Airport:</label><input type="text" name="destination" value="Destination"></div>
+                    <div class="four"><label id="date">Date of Departure:</label><input type="date" name="date" value="Date"></div>
+                    <div class="five"><label id="time">Boarding Time:</label><input type="time" name="time" value="Time"></div>
+                    <div class="six"><label id="flightid">Flight ID:</label><input type="text" name="flightid" value="Flight ID"></div>
+                    <div class="partition">
+                        |      <label id="from">From: </label><input type="text" name="from" value="From?">
+                        <br>
+                        |      <label id="to">To: </label><input type="text" name="to" value="To?">
+                        <br>
+                        |       Gate No. : <input type="text" name="gate" value="Gate Number?">
+                        <br>
+                        |       Seat No. : <input type="text" name="seat" value="Seat Number?">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn btn-info" style="background-color:rgb(10, 147, 147);color:rgb(241, 241, 206); font-family:sans-serif;">Save & Download!</button>
+        </div>
+    </form>
+
+    </div>
+</body>
+</html>
